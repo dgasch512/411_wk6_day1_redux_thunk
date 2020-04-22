@@ -14,6 +14,13 @@ export const removeCar = (index) => {
     }
 }
 
+export const deleteMake = (index) => {
+    return {
+        type: 'DELETE_MAKE',
+        value: index
+    }
+}
+
 export const fetchMakes = () => {
     return (dispatch) => {
         fetch(url)
