@@ -31,6 +31,7 @@ const useStyles = makeStyles({
         <div>
 
         <Button variant="contained" color="primary" onClick={props.fetchMakes}>Import</Button>
+        <h2>Count: {props.makes.length}</h2>
         <Container component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
